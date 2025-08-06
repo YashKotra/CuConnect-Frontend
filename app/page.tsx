@@ -92,7 +92,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-blue-500/5 to-green-500/10"></div>
-        <div className="container mx-auto px-4 py-20 relative">
+        <div className="container mx-auto px-4 py-20 relative md:w-[80%]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
@@ -222,7 +222,7 @@ export default function LandingPage() {
 
       {/* Benefits Section */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:w-[80%]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div>
@@ -257,8 +257,10 @@ export default function LandingPage() {
                   },
                 ].map((benefit, index) => (
                   <div key={index} className="flex gap-4 p-4 rounded-2xl hover:bg-muted/50 transition-colors">
-                    <div className="flex-shrink-0 p-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-xl">
+                    <div>
+                      <div className="flex-shrink-0 p-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-xl">
                       {benefit.icon}
+                    </div>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">{benefit.title}</h4>
@@ -272,7 +274,7 @@ export default function LandingPage() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-3xl blur-3xl"></div>
               <div className="relative grid grid-cols-2 gap-4">
-                <Card className="bg-card/80 backdrop-blur-sm border-0 shadow-xl rounded-2xl p-6">
+                <Card className="bg-card/80 backdrop-blur-sm border-0 shadow-xl rounded-2xl p-6 h-32">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-green-600 mb-2">98%</div>
                     <div className="text-sm text-muted-foreground">Student Satisfaction</div>
@@ -284,7 +286,7 @@ export default function LandingPage() {
                     <div className="text-sm text-muted-foreground">AI Support</div>
                   </div>
                 </Card>
-                <Card className="bg-card/80 backdrop-blur-sm border-0 shadow-xl rounded-2xl p-6 -mt-4">
+                <Card className="bg-card/80 backdrop-blur-sm border-0 shadow-xl rounded-2xl p-6 -mt-4 h-32">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-purple-600 mb-2">500+</div>
                     <div className="text-sm text-muted-foreground">Expert Mentors</div>
@@ -304,7 +306,7 @@ export default function LandingPage() {
 
       {/* Testimonials Section */}
       <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:w-[85%]">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-gradient-to-r from-orange-500/10 to-red-500/10 text-orange-600 border-orange-500/20">
               Testimonials
@@ -390,14 +392,14 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-3 mb-4 md:mb-0">
               <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">CU</span>
+                <img src="https://worldwidetranscripts.com/wp-content/uploads/2024/12/Chandigarh-University-Logo-400x400-1.png" alt="CU" />
               </div>
               <div>
                 <h3 className="font-bold">CUConnect</h3>
                 <p className="text-sm text-muted-foreground">Future of Learning</p>
               </div>
             </div>
-            <div className="text-sm text-muted-foreground">© 2024 CUConnect. Made with ❤️ for Chandigarh University</div>
+            <div className="text-sm text-muted-foreground">© 2025 CUConnect. Made with ❤️ for Chandigarh University</div>
           </div>
         </div>
       </footer>
