@@ -13,7 +13,7 @@ import { Eye, EyeOff, Mail, Lock, ArrowLeft, Github, Chrome, Sparkles } from "lu
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 
-export default function LoginPage() {
+export default function Page() {
   const [showPassword, setShowPassword] = useState(false)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
